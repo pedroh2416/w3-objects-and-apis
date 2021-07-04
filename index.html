@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instaboost Pokedex</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">PokéDex</h1>
+      <h6>powered by Instaboost Media!</h3>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-4">
+        
+        <input id="inputPoke"></input>
+        <button id="btn" type="button" class="btn btn-outline-warning ml-2">Search!</button>
+        
+        <ul class="list-group mt-2" id="pokes"></ul>
+
+      </div>
+
+      <div class="col-8">
+
+        <img id="pokeImage"></img>
+        <h1 id="pokeName" class="mb-3"></h1>
+        <h3 id="pokeNum" class="mb-3"></h3>
+        <h3 id="pokeTypes"></h3>
+        <p id="pokeAbilities"></p>
+        <p id="movesHeader"></p>
+        <ul id="pokeMoves"></p>
+
+      </div>
+      
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>

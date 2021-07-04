@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console Viewer Page lol</title>
+</head>
+<body>
+    <h2>Press F12 on Chrome to access your console!</h2>
+    
+    <script type="text/javascript">
+        var customer = {
+          firstName: "John",
+          lastName: "Smith",
+          age: 25,
+          address: {
+            streetAddress: "21 2nd Street",
+            city: "New York",
+            state: "NY",
+            postalCode: "10021"
+          },
+          phoneNumber: [{
+            type: "home",
+            number: "212 555-1234"
+          }, {
+            type: "fax",
+            number: "646 555-4567"
+          }]
+        };
+
+        //destructure for name & postal code
+        var {firstName, lastName, } = customer;
+        var {address: {postalCode} } = customer;
+        
+    
+        /* Use the below space to console.log to log these four things:
+        - First name
+        - Postal code
+        - Phone number
+        - Fax number
+        - **Tip** You can start with console.log(customer) to get a good view of the object tree.
+        */
+        console.log(customer);
+        console.log(customer.firstName);
+        console.log(postalCode);
+        
+        //access the phone number in array at position 0
+        console.log(customer.phoneNumber[0].number);
+
+        //access the fax number in array at position 1
+        console.log(customer.phoneNumber[1].number);
+      </script>
+    
+
+</body>
+</html>
